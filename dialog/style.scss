@@ -7,12 +7,15 @@ body{
 overflow-x: hidden;
 position: relative;
 transition: height 300ms cubic-bezier(.25, .1, .25, 1);
-font-family: 'Roboto', sans-serif;
 background: #222;
 color: white;
 }
+::selection {
+  background: #222;
+}
 *{
 	    box-sizing: border-box;
+			outline: none;
 }
 body, html{
 	margin: 0;
@@ -320,8 +323,10 @@ h1{
 }
 
 .wrapper .cursor{
-	width: 40px;
-	height: 40px;
+	width: 30px;
+height: 30px;
+transition: all .2s ease;
+cursor: pointer;
 }
 
 
@@ -332,14 +337,18 @@ h1{
     margin-bottom: 20px;
 }
 #options_wrapper .options{
-	display: inline-block;
-	margin-right: 15px;
-	margin-bottom: 20px;
-	float: left;
+	padding: 10px;
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	height: 50px;
 }
-.wrapper .selected .cursor{
-	background-color: #ffddcc !important;
+#options_wrapper .options.selected{
+border-bottom: 1px solid white;
 }
+// .wrapper .selected .cursor{
+// 	background-color: #ffddcc !important;
+// }
 
 .wrapper .selected p{
 	color: #269e82;
@@ -358,16 +367,28 @@ h1{
 	font-size: 14px;
 	padding: 5px 20px;
 	border: none;
+	background: #414141;
+	color: white;
+	font-family: 'Montserrat', sans-serif;
+	font-weight: 700;
+	transition: all .2s ease;
+	width: 200px;
+	cursor: pointer;
+}
+#alloff:hover{
+	background: white;
+	color: #222;
 }
 #txtH1{
 	display: block;
 	float: left;
 	font-weight: bold;
-	font-size: 20pt;
+	font-size: 24px;
 }
 #options_wrapper{
-	margin-top: 10px;
-	clear:both;
+	padding: 15px;
+	display: flex;
+	flex-flow: row wrap;
 }
 p#alloff:hover{
 	text-decoration: underline;
@@ -383,30 +404,31 @@ p#alloff:hover{
 }
 
 /* Not Allowed */
+
 .notAllowed .wrapper, .notAllowed h1, .notAllowed .footer, .notAllowedWrapper {
 	display: none;
 }
+.notAllowed .wrapper {
+	display: none !important;
 
+}
 .notAllowed .notAllowedWrapper{
 	display: flex;
 	flex-direction: column;
 	justify-content: center;
 	align-items: center;
-	/*width: 180px;*/
 	width: 100%;
-
+	height: 100%;
 }
 
-.notAllowed .notAllowedWrapper img{
-	margin: 20px 0 0 0;
-}
+
 
 .notAllowed .notAllowedWrapper h2{
-	font-family: 'Georgia';
+	font-family: 'Montserrat', sans-serif;
 	text-align: center;
 	font-size: 24px;
-	font-weight: 300;
 	margin-bottom: 0;
+	font-weight: 500;
 }
 
 .notAllowed .notAllowedWrapper p{
@@ -419,6 +441,7 @@ p#alloff:hover{
 	padding-top: 16px;
 	margin-top: 10px;
 	border-top: 1px solid #DFDFDF;
+	font-family: 'Montserrat', sans-serif;
 	width: 100%;
 	outline: none;
 	box-shadow: none;
