@@ -5,17 +5,7 @@
    "browser_action": {
       "default_icon": "icon.png",
       "default_popup": "dialog/index.html",
-      "default_title": "Change Cursors for Chrome"
-   },
-   "commands": {
-      "_execute_browser_action": {
-         "suggested_key": {
-            "chromeos": "Alt+Shift+C",
-            "linux": "Alt+Shift+C",
-            "mac": "Alt+Shift+C",
-            "windows": "Alt+Shift+C"
-         }
-      }
+      "default_title": "Change your Cursor here"
    },
    "content_scripts": [ {
       "all_frames": true,
@@ -23,20 +13,17 @@
       "js": [ "content/content.js" ],
       "matches": [ "*://*/*" ]
    } ],
-   "description": "Change Custom Cursors on Chrome Browser",
+   "description": "Custom mouse cursors! Change the cursor to cute custom pointer",
    "homepage_url": "https://coolsymbol.com",
    "icons": {
       "128": "icon.png",
       "16": "icon.png",
       "48": "icon.png"
    },
-   "key": "MIIBIjANBgkqhkiG9w0BAQEFAAOCAQ8AMIIBCgKCAQEAgH5obRHPc1P+QzkbC80tCGmFynXuPKwmCe5x8OcN/pqjtM/rYWtLDHrS6UF4DCuMNyEzyy2dKvButvm1rnQvY3UOOdgDgpY5quLTozmKFWEJa3+IH5huqXj+NyDkZVNbLfXOYBAfO/hMhgc1zhCfq9qIU7vIS8eyBQuUqkxcpcuMTzrrkJcgvLeQpn0VSzonw+h7woedrbgqo+a1gxh8Q6ADMW2GTBsGdLhx8q0CnmKLXd6fPozRURqtW+QfxF6AigiGopI517EoLtG10N3krxZasQFjiH9fzpHl7zi2ju02Zc+CxdxOHIrrbw0GLsZh9rcLtZNxzujEYOHzDNrbUwIDAQAB",
    "manifest_version": 2,
-   "name": "Change Cursors for Chrome",
+   "name": "Style Cursor",
    "offline_enabled": true,
    "permissions": [ "storage", "tabs", "activeTab", "*://*/*" ],
-   "short_name": "CC",
-   "update_url": "https://clients2.google.com/service/update2/crx",
    "version": "1.1",
    "web_accessible_resources": [ "images/*", "content/*.*" ]
 }
