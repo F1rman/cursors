@@ -1,0 +1,376 @@
+@import url("https://fonts.googleapis.com/css2?family=Montserrat:wght@100;300;500;700;900&display=swap");
+body {
+  width: 480px;
+  height: 480px;
+  background: #fff;
+  font-family: 'Montserrat', sans-serif;
+  overflow-x: hidden;
+  position: relative;
+  transition: height 300ms cubic-bezier(0.25, 0.1, 0.25, 1);
+  font-family: 'Roboto', sans-serif;
+  background: #222;
+  color: white; }
+
+* {
+  box-sizing: border-box; }
+
+body, html {
+  margin: 0; }
+
+header {
+  display: flex;
+  justify-content: space-between;
+  padding: 20px;
+  height: 60px;
+  align-items: center;
+  border-bottom: 1px solid #414141; }
+
+h1 {
+  font-size: 22px;
+  font-weight: normal;
+  margin-bottom: 28px;
+  text-align: center;
+  margin: 0; }
+
+.wrapper #cursor0001 .cursor {
+  background: url("chrome-extension://__MSG_@@extension_id__/images/arrows/cursor_0001.png") center center/cover no-repeat; }
+
+.wrapper #cursor0001 .cursor.cursorsHover {
+  background: url("chrome-extension://__MSG_@@extension_id__/images/pointers/cursor_pointer_0001.png") center center/cover no-repeat; }
+
+.wrapper #cursor0002 .cursor {
+  background: url("chrome-extension://__MSG_@@extension_id__/images/arrows/cursor_0002.png") center center/cover no-repeat; }
+
+.wrapper #cursor0002 .cursor.cursorsHover {
+  background: url("chrome-extension://__MSG_@@extension_id__/images/pointers/cursor_pointer_0002.png") center center/cover no-repeat; }
+
+.wrapper #cursor0003 .cursor {
+  background: url("chrome-extension://__MSG_@@extension_id__/images/arrows/cursor_0003.png") center center/cover no-repeat; }
+
+.wrapper #cursor0003 .cursor.cursorsHover {
+  background: url("chrome-extension://__MSG_@@extension_id__/images/pointers/cursor_pointer_0003.png") center center/cover no-repeat; }
+
+.wrapper #cursor0004 .cursor {
+  background: url("chrome-extension://__MSG_@@extension_id__/images/arrows/cursor_0004.png") center center/cover no-repeat; }
+
+.wrapper #cursor0004 .cursor.cursorsHover {
+  background: url("chrome-extension://__MSG_@@extension_id__/images/pointers/cursor_pointer_0004.png") center center/cover no-repeat; }
+
+.wrapper #cursor0005 .cursor {
+  background: url("chrome-extension://__MSG_@@extension_id__/images/arrows/cursor_0005.png") center center/cover no-repeat; }
+
+.wrapper #cursor0005 .cursor.cursorsHover {
+  background: url("chrome-extension://__MSG_@@extension_id__/images/pointers/cursor_pointer_0005.png") center center/cover no-repeat; }
+
+.wrapper #cursor0006 .cursor {
+  background: url("chrome-extension://__MSG_@@extension_id__/images/arrows/cursor_0006.png") center center/cover no-repeat; }
+
+.wrapper #cursor0006 .cursor.cursorsHover {
+  background: url("chrome-extension://__MSG_@@extension_id__/images/pointers/cursor_pointer_0006.png") center center/cover no-repeat; }
+
+.wrapper #cursor0007 .cursor {
+  background: url("chrome-extension://__MSG_@@extension_id__/images/arrows/cursor_0007.png") center center/cover no-repeat; }
+
+.wrapper #cursor0007 .cursor.cursorsHover {
+  background: url("chrome-extension://__MSG_@@extension_id__/images/pointers/cursor_pointer_0007.png") center center/cover no-repeat; }
+
+.wrapper #cursor0008 .cursor {
+  background: url("chrome-extension://__MSG_@@extension_id__/images/arrows/cursor_0008.png") center center/cover no-repeat; }
+
+.wrapper #cursor0008 .cursor.cursorsHover {
+  background: url("chrome-extension://__MSG_@@extension_id__/images/pointers/cursor_pointer_0008.png") center center/cover no-repeat; }
+
+.wrapper #cursor0009 .cursor {
+  background: url("chrome-extension://__MSG_@@extension_id__/images/arrows/cursor_0009.png") center center/cover no-repeat; }
+
+.wrapper #cursor0009 .cursor.cursorsHover {
+  background: url("chrome-extension://__MSG_@@extension_id__/images/pointers/cursor_pointer_0009.png") center center/cover no-repeat; }
+
+.wrapper #cursor0010 .cursor {
+  background: url("chrome-extension://__MSG_@@extension_id__/images/arrows/cursor_0010.png") center center/cover no-repeat; }
+
+.wrapper #cursor0010 .cursor.cursorsHover {
+  background: url("chrome-extension://__MSG_@@extension_id__/images/pointers/cursor_pointer_0010.png") center center/cover no-repeat; }
+
+.wrapper #cursor0011 .cursor {
+  background: url("chrome-extension://__MSG_@@extension_id__/images/arrows/cursor_0011.png") center center/cover no-repeat; }
+
+.wrapper #cursor0011 .cursor.cursorsHover {
+  background: url("chrome-extension://__MSG_@@extension_id__/images/pointers/cursor_pointer_0011.png") center center/cover no-repeat; }
+
+.wrapper #cursor0012 .cursor {
+  background: url("chrome-extension://__MSG_@@extension_id__/images/arrows/cursor_0012.png") center center/cover no-repeat; }
+
+.wrapper #cursor0012 .cursor.cursorsHover {
+  background: url("chrome-extension://__MSG_@@extension_id__/images/pointers/cursor_pointer_0012.png") center center/cover no-repeat; }
+
+.wrapper #cursor0013 .cursor {
+  background: url("chrome-extension://__MSG_@@extension_id__/images/arrows/cursor_0013.png") center center/cover no-repeat; }
+
+.wrapper #cursor0013 .cursor.cursorsHover {
+  background: url("chrome-extension://__MSG_@@extension_id__/images/pointers/cursor_pointer_0013.png") center center/cover no-repeat; }
+
+.wrapper #cursor0014 .cursor {
+  background: url("chrome-extension://__MSG_@@extension_id__/images/arrows/cursor_0014.png") center center/cover no-repeat; }
+
+.wrapper #cursor0014 .cursor.cursorsHover {
+  background: url("chrome-extension://__MSG_@@extension_id__/images/pointers/cursor_pointer_0014.png") center center/cover no-repeat; }
+
+.wrapper #cursor0015 .cursor {
+  background: url("chrome-extension://__MSG_@@extension_id__/images/arrows/cursor_0015.png") center center/cover no-repeat; }
+
+.wrapper #cursor0015 .cursor.cursorsHover {
+  background: url("chrome-extension://__MSG_@@extension_id__/images/pointers/cursor_pointer_0015.png") center center/cover no-repeat; }
+
+.wrapper #cursor0016 .cursor {
+  background: url("chrome-extension://__MSG_@@extension_id__/images/arrows/cursor_0016.png") center center/cover no-repeat; }
+
+.wrapper #cursor0016 .cursor.cursorsHover {
+  background: url("chrome-extension://__MSG_@@extension_id__/images/pointers/cursor_pointer_0016.png") center center/cover no-repeat; }
+
+.wrapper #cursor0017 .cursor {
+  background: url("chrome-extension://__MSG_@@extension_id__/images/arrows/cursor_0017.png") center center/cover no-repeat; }
+
+.wrapper #cursor0017 .cursor.cursorsHover {
+  background: url("chrome-extension://__MSG_@@extension_id__/images/pointers/cursor_pointer_0017.png") center center/cover no-repeat; }
+
+.wrapper #cursor0018 .cursor {
+  background: url("chrome-extension://__MSG_@@extension_id__/images/arrows/cursor_0018.png") center center/cover no-repeat; }
+
+.wrapper #cursor0018 .cursor.cursorsHover {
+  background: url("chrome-extension://__MSG_@@extension_id__/images/pointers/cursor_pointer_0018.png") center center/cover no-repeat; }
+
+.wrapper #cursor0019 .cursor {
+  background: url("chrome-extension://__MSG_@@extension_id__/images/arrows/cursor_0019.png") center center/cover no-repeat; }
+
+.wrapper #cursor0019 .cursor.cursorsHover {
+  background: url("chrome-extension://__MSG_@@extension_id__/images/pointers/cursor_pointer_0019.png") center center/cover no-repeat; }
+
+.wrapper #cursor0020 .cursor {
+  background: url("chrome-extension://__MSG_@@extension_id__/images/arrows/cursor_0020.png") center center/cover no-repeat; }
+
+.wrapper #cursor0020 .cursor.cursorsHover {
+  background: url("chrome-extension://__MSG_@@extension_id__/images/pointers/cursor_pointer_0020.png") center center/cover no-repeat; }
+
+.wrapper #cursor0021 .cursor {
+  background: url("chrome-extension://__MSG_@@extension_id__/images/arrows/cursor_0021.png") center center/cover no-repeat; }
+
+.wrapper #cursor0021 .cursor.cursorsHover {
+  background: url("chrome-extension://__MSG_@@extension_id__/images/pointers/cursor_pointer_0021.png") center center/cover no-repeat; }
+
+.wrapper #cursorthings_0001 .cursor {
+  background: url("chrome-extension://__MSG_@@extension_id__/images/arrows/cursor_things_0001.png") center center/cover no-repeat; }
+
+.wrapper #cursorthings_0001 .cursor.cursorsHover {
+  background: url("chrome-extension://__MSG_@@extension_id__/images/pointers/cursor_pointer_things_0001.png") center center/cover no-repeat; }
+
+.wrapper #cursorthings_0002 .cursor {
+  background: url("chrome-extension://__MSG_@@extension_id__/images/arrows/cursor_things_0002.png") center center/cover no-repeat; }
+
+.wrapper #cursorthings_0002 .cursor.cursorsHover {
+  background: url("chrome-extension://__MSG_@@extension_id__/images/pointers/cursor_pointer_things_0002.png") center center/cover no-repeat; }
+
+.wrapper #cursorthings_0003 .cursor {
+  background: url("chrome-extension://__MSG_@@extension_id__/images/arrows/cursor_things_0003.png") center center/cover no-repeat; }
+
+.wrapper #cursorthings_0003 .cursor.cursorsHover {
+  background: url("chrome-extension://__MSG_@@extension_id__/images/pointers/cursor_pointer_things_0003.png") center center/cover no-repeat; }
+
+.wrapper #cursorthings_0004 .cursor {
+  background: url("chrome-extension://__MSG_@@extension_id__/images/arrows/cursor_things_0004.png") center center/cover no-repeat; }
+
+.wrapper #cursorthings_0004 .cursor.cursorsHover {
+  background: url("chrome-extension://__MSG_@@extension_id__/images/pointers/cursor_pointer_things_0004.png") center center/cover no-repeat; }
+
+.wrapper #cursorthings_0005 .cursor {
+  background: url("chrome-extension://__MSG_@@extension_id__/images/arrows/cursor_things_0005.png") center center/cover no-repeat; }
+
+.wrapper #cursorthings_0005 .cursor.cursorsHover {
+  background: url("chrome-extension://__MSG_@@extension_id__/images/pointers/cursor_pointer_things_0005.png") center center/cover no-repeat; }
+
+.wrapper #cursorthings_0006 .cursor {
+  background: url("chrome-extension://__MSG_@@extension_id__/images/arrows/cursor_things_0006.png") center center/cover no-repeat; }
+
+.wrapper #cursorthings_0006 .cursor.cursorsHover {
+  background: url("chrome-extension://__MSG_@@extension_id__/images/pointers/cursor_pointer_things_0006.png") center center/cover no-repeat; }
+
+.wrapper #cursorthings_0007 .cursor {
+  background: url("chrome-extension://__MSG_@@extension_id__/images/arrows/cursor_things_0007.png") center center/cover no-repeat; }
+
+.wrapper #cursorthings_0007 .cursor.cursorsHover {
+  background: url("chrome-extension://__MSG_@@extension_id__/images/pointers/cursor_pointer_things_0007.png") center center/cover no-repeat; }
+
+.wrapper #cursorthings_0008 .cursor {
+  background: url("chrome-extension://__MSG_@@extension_id__/images/arrows/cursor_things_0008.png") center center/cover no-repeat; }
+
+.wrapper #cursorthings_0008 .cursor.cursorsHover {
+  background: url("chrome-extension://__MSG_@@extension_id__/images/pointers/cursor_pointer_things_0008.png") center center/cover no-repeat; }
+
+.wrapper #cursorthings_0009 .cursor {
+  background: url("chrome-extension://__MSG_@@extension_id__/images/arrows/cursor_things_0009.png") center center/cover no-repeat; }
+
+.wrapper #cursorthings_0009 .cursor.cursorsHover {
+  background: url("chrome-extension://__MSG_@@extension_id__/images/pointers/cursor_pointer_things_0009.png") center center/cover no-repeat; }
+
+.wrapper #cursorthings_0010 .cursor {
+  background: url("chrome-extension://__MSG_@@extension_id__/images/arrows/cursor_things_0010.png") center center/cover no-repeat; }
+
+.wrapper #cursorthings_0010 .cursor.cursorsHover {
+  background: url("chrome-extension://__MSG_@@extension_id__/images/pointers/cursor_pointer_things_0010.png") center center/cover no-repeat; }
+
+.wrapper #cursorthings_0011 .cursor {
+  background: url("chrome-extension://__MSG_@@extension_id__/images/arrows/cursor_things_0011.png") center center/cover no-repeat; }
+
+.wrapper #cursorthings_0011 .cursor.cursorsHover {
+  background: url("chrome-extension://__MSG_@@extension_id__/images/pointers/cursor_pointer_things_0011.png") center center/cover no-repeat; }
+
+.wrapper #cursorthings_0012 .cursor {
+  background: url("chrome-extension://__MSG_@@extension_id__/images/arrows/cursor_things_0012.png") center center/cover no-repeat; }
+
+.wrapper #cursorthings_0012 .cursor.cursorsHover {
+  background: url("chrome-extension://__MSG_@@extension_id__/images/pointers/cursor_pointer_things_0012.png") center center/cover no-repeat; }
+
+.wrapper #cursorthings_0013 .cursor {
+  background: url("chrome-extension://__MSG_@@extension_id__/images/arrows/cursor_things_0013.png") center center/cover no-repeat; }
+
+.wrapper #cursorthings_0013 .cursor.cursorsHover {
+  background: url("chrome-extension://__MSG_@@extension_id__/images/pointers/cursor_pointer_things_0013.png") center center/cover no-repeat; }
+
+.wrapper #cursorthings_0014 .cursor {
+  background: url("chrome-extension://__MSG_@@extension_id__/images/arrows/cursor_things_0014.png") center center/cover no-repeat; }
+
+.wrapper #cursorthings_0014 .cursor.cursorsHover {
+  background: url("chrome-extension://__MSG_@@extension_id__/images/pointers/cursor_pointer_things_0014.png") center center/cover no-repeat; }
+
+.wrapper #cursorthings_0015 .cursor {
+  background: url("chrome-extension://__MSG_@@extension_id__/images/arrows/cursor_things_0015.png") center center/cover no-repeat; }
+
+.wrapper #cursorthings_0015 .cursor.cursorsHover {
+  background: url("chrome-extension://__MSG_@@extension_id__/images/pointers/cursor_pointer_things_0015.png") center center/cover no-repeat; }
+
+.wrapper #cursorthings_0016 .cursor {
+  background: url("chrome-extension://__MSG_@@extension_id__/images/arrows/cursor_things_0016.png") center center/cover no-repeat; }
+
+.wrapper #cursorthings_0016 .cursor.cursorsHover {
+  background: url("chrome-extension://__MSG_@@extension_id__/images/pointers/cursor_pointer_things_0016.png") center center/cover no-repeat; }
+
+.wrapper #cursorthings_0017 .cursor {
+  background: url("chrome-extension://__MSG_@@extension_id__/images/arrows/cursor_things_0017.png") center center/cover no-repeat; }
+
+.wrapper #cursorthings_0017 .cursor.cursorsHover {
+  background: url("chrome-extension://__MSG_@@extension_id__/images/pointers/cursor_pointer_things_0017.png") center center/cover no-repeat; }
+
+.wrapper #cursorthings_0018 .cursor {
+  background: url("chrome-extension://__MSG_@@extension_id__/images/arrows/cursor_things_0018.png") center center/cover no-repeat; }
+
+.wrapper #cursorthings_0018 .cursor.cursorsHover {
+  background: url("chrome-extension://__MSG_@@extension_id__/images/pointers/cursor_pointer_things_0018.png") center center/cover no-repeat; }
+
+.wrapper #cursorthings_0019 .cursor {
+  background: url("chrome-extension://__MSG_@@extension_id__/images/arrows/cursor_things_0019.png") center center/cover no-repeat; }
+
+.wrapper #cursorthings_0019 .cursor.cursorsHover {
+  background: url("chrome-extension://__MSG_@@extension_id__/images/pointers/cursor_pointer_things_0019.png") center center/cover no-repeat; }
+
+.wrapper #cursorthings_0020 .cursor {
+  background: url("chrome-extension://__MSG_@@extension_id__/images/arrows/cursor_things_0020.png") center center/cover no-repeat; }
+
+.wrapper #cursorthings_0020 .cursor.cursorsHover {
+  background: url("chrome-extension://__MSG_@@extension_id__/images/pointers/cursor_pointer_things_0020.png") center center/cover no-repeat; }
+
+.wrapper .cursor {
+  width: 40px;
+  height: 40px; }
+
+#options_wrapper {
+  width: 100%;
+  height: 100%;
+  margin-bottom: 20px; }
+
+#options_wrapper .options {
+  display: inline-block;
+  margin-right: 15px;
+  margin-bottom: 20px;
+  float: left; }
+
+.wrapper .selected .cursor {
+  background-color: #ffddcc !important; }
+
+.wrapper .selected p {
+  color: #269e82;
+  transition: color 0.25s ease-in-out; }
+
+#command_container {
+  width: 100%; }
+
+#alloff {
+  display: block;
+  float: right;
+  padding: 4px;
+  font-size: 14pt;
+  border-radius: 5px;
+  font-size: 14px;
+  padding: 5px 20px;
+  border: none; }
+
+#txtH1 {
+  display: block;
+  float: left;
+  font-weight: bold;
+  font-size: 20pt; }
+
+#options_wrapper {
+  margin-top: 10px;
+  clear: both; }
+
+p#alloff:hover {
+  text-decoration: underline; }
+
+.alloff {
+  opacity: 0.2; }
+
+.inactive {
+  opacity: .5; }
+
+/* Not Allowed */
+.notAllowed .wrapper, .notAllowed h1, .notAllowed .footer, .notAllowedWrapper {
+  display: none; }
+
+.notAllowed .notAllowedWrapper {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  /*width: 180px;*/
+  width: 100%; }
+
+.notAllowed .notAllowedWrapper img {
+  margin: 20px 0 0 0; }
+
+.notAllowed .notAllowedWrapper h2 {
+  font-family: 'Georgia';
+  text-align: center;
+  font-size: 24px;
+  font-weight: 300;
+  margin-bottom: 0; }
+
+.notAllowed .notAllowedWrapper p {
+  font-size: 14px; }
+
+.notAllowed .notAllowedWrapper a, .notAllowed .notAllowedWrapper a:visited {
+  color: #269e82;
+  font-size: 14px;
+  padding-top: 16px;
+  margin-top: 10px;
+  border-top: 1px solid #DFDFDF;
+  width: 100%;
+  outline: none;
+  box-shadow: none;
+  text-align: center;
+  text-decoration: none;
+  transition: color .25s ease; }
+
+.notAllowed .notAllowedWrapper a:hover {
+  color: #269e82; }
+
+/*# sourceMappingURL=style.css.map */
