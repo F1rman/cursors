@@ -321,7 +321,31 @@ h1{
 .wrapper #cursorthings_0020 .cursor.cursorsHover{
 	background: url('chrome-extension://__MSG_@@extension_id__/images/pointers/cursor_pointer_things_0020.png') center center/cover no-repeat;
 }
+.wrapper #cursorthings_0021 .cursor{
+	background: url('chrome-extension://__MSG_@@extension_id__/images/arrows/cursor_things_0021.png') center center/cover no-repeat;
+}
+.wrapper #cursorthings_0021 .cursor.cursorsHover{
+	background: url('chrome-extension://__MSG_@@extension_id__/images/pointers/cursor_pointer_things_0021.png') center center/cover no-repeat;
+}
+.wrapper #cursorthings_0020::after
+, .wrapper #cursorthings_0019::after
+, .wrapper #cursorthings_0018::after
+, .wrapper #cursorthings_0017::after
+, .wrapper #cursorthings_0016::after{
+	content: 'NEW';
+	background: orange;
+	padding: 2px 6px;
+	font-weight: 700;
+	border-radius: 4px;
+	position: absolute;
+	top: 0px;
+	left: 20px;
+	font-size: 10px;
+}
 
+.wrapper .options{
+	position: relative;
+}
 .wrapper .cursor{
 	width: 30px;
 height: 30px;
@@ -334,7 +358,6 @@ cursor: pointer;
 #options_wrapper{
     width: 100%;
     height: 100%;
-    margin-bottom: 20px;
 }
 #options_wrapper .options{
 	padding: 10px;
@@ -452,4 +475,17 @@ p#alloff:hover{
 
 .notAllowed .notAllowedWrapper a:hover{
 	color: #269e82;
+}
+.rete{
+	color: #269e82;
+padding: 7px;
+display: flex;
+justify-content: center;
+font-size: 16px;
+font-weight: 700;
+border-top: 1px solid;
+position: absolute;
+bottom: -50px;
+left: 0;
+width: 100%;
 }
