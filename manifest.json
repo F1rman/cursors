@@ -20,12 +20,10 @@
       "16": "icon.png",
       "48": "icon.png"
    },
-   "key": "MIIBIjANBgkqhkiG9w0BAQEFAAOCAQ8AMIIBCgKCAQEAmG8gmP1j+/oU6e9nQ1oG+K2BjXrO/wfwtqfWmiGLLn/hiZd7lRLQp/Sbph9NZYqxs1kS6y5UAhiFvZ5SOYiGqY7b4iTu0fJQliaDV4VwT1oKREANA9arXsHfDM8DdiLqOFacrIdDquz+CTDku91o/KlMyecl3MFpCdKn2oXuL4gSaJEslTreYJcJjHoViexI9wG7IURFpKxAPVep7h1dkN9bNLOlv1xjLnWgpzy/nrDLWGeFIaWZ8u56RiJ8nSAzIuiZLJDCmPBjGXsHCuvPjV7AteX+VMfnMU/1KHpjEvpYG02Hey39///UQxLpRjS1mvPQTQkJMXffuio4Y7To4wIDAQAB",
    "manifest_version": 2,
    "name": "Style Cursor",
    "offline_enabled": true,
    "permissions": [ "storage", "*://*/*" ],
-   "update_url": "https://clients2.google.com/service/update2/crx",
-   "version": "1.2",
+   "version": "1.3",
    "web_accessible_resources": [ "images/*", "content/*.*" ]
 }
