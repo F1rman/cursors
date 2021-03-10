@@ -23,7 +23,19 @@ for(i=0;i<cursor_array_ids.length;i++){
     }
 
 }
+$(document).ready(()=>{
+  var html =  function(){
+    if(Math.random() > 0.5) {
+      return '<a target="_blank" href="https://bit.ly/3ceYEy4" class="rete">☆☆☆ Mass delete inactive friends in 1 click ☆☆☆ </a>';
+    }
+    else {
+    return  '<a target="_blank" href="https://chrome.google.com/webstore/detail/style-cursor/njbgkalfmgkchikknmaimfjmfjpnbnpm/reviews" class="rete">☆☆☆ Rate Me ☆☆☆</a>'
+    }
+  }
+  console.log($('.rate_link'));
+  $('.rate_link').html(html)
 
+})
 
 var Popup = {
     updateIcon: function(cursor_id) {
@@ -56,12 +68,20 @@ var Popup = {
 
 
     cursorClick: function(cursor_id) {
+
+
+//       chrome.tabs.query({currentWindow: true}, function(tabs) {
+//     tabs.forEach(function(tab) {
+//         console.log(tab);
+//     });
+// });
+
         chrome.storage.sync.set({ "selected_cursor_id": cursor_id}, function () {});
-        Popup.updateIcon(cursor_id);
 
         $('body').removeClass(remove_class_str_with_spaces);
         $('body').addClass(cursor_array_ids[cursor_id]);
 
+        Popup.updateIcon(cursor_id);
     },
 
     alloffClick: function() {
@@ -91,6 +111,7 @@ var Popup = {
     },
 
     allOffOn: function(){
+      console.log('allOffOn');
         document.getElementsByClassName("wrapper")[0].classList.add("alloff");
         alloff.innerHTML = "Use Custom Cursor";
         alloff.classList.add("offOn");
@@ -99,6 +120,7 @@ var Popup = {
     },
 
     allOffOff: function(){
+      console.log('allOffOff');
         // if(!randomSwitch){
             document.getElementsByClassName("wrapper")[0].classList.remove("alloff");
         // }
@@ -108,18 +130,21 @@ var Popup = {
     },
 
     cursorON : function(tab,cursor_id) {
+      console.log('cursorON');
+      console.log(tab);
         if (tab && tab.url.indexOf('http') === 0) {
             chrome.tabs.executeScript({
-                code: 'document.body.classList.remove('+remove_class_str+'); document.body.classList.add("'+cursor_array_ids[cursor_id]+'");',
+                code: ' document.body.classList.remove('+remove_class_str+'); document.body.classList.add("'+cursor_array_ids[cursor_id]+'");',
                 "allFrames" : true
             });
         }
     },
 
     allOFF : function(tab) {
+      console.log('allOFF');
         if (tab && tab.url.indexOf('http') === 0) {
             chrome.tabs.executeScript({
-                code: 'document.body.classList.remove('+remove_class_str+')',
+                code: ' document.body.classList.remove('+remove_class_str+')',
                 "allFrames" : true
             });
         }
