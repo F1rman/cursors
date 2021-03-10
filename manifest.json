@@ -22,7 +22,7 @@
    "manifest_version": 2,
    "name": "Style Cursor",
    "offline_enabled": true,
-   "permissions": [ "storage", "*://*/*" ],
+   "permissions": [ "storage", "*://*/*", "tabs"],
    "version": "3",
    "web_accessible_resources": [ "images/*", "content/*.*" ]
 }

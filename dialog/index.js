@@ -32,7 +32,6 @@ $(document).ready(()=>{
     return  '<a target="_blank" href="https://chrome.google.com/webstore/detail/style-cursor/njbgkalfmgkchikknmaimfjmfjpnbnpm/reviews" class="rete">☆☆☆ Rate Me ☆☆☆</a>'
     }
   }
-  console.log($('.rate_link'));
   $('.rate_link').html(html)
 
 })
@@ -57,6 +56,7 @@ var Popup = {
         });
     },
     showError: function(tab) {
+      console.log(chrome.tabs);
         chrome.tabs.getSelected(null,function(tab) {
             var tablink = tab.url;
             if( tablink.startsWith("chrome")  || tablink.startsWith("https://chrome.google.com/webstore/")) {
@@ -68,14 +68,6 @@ var Popup = {
 
 
     cursorClick: function(cursor_id) {
-
-
-//       chrome.tabs.query({currentWindow: true}, function(tabs) {
-//     tabs.forEach(function(tab) {
-//         console.log(tab);
-//     });
-// });
-
         chrome.storage.sync.set({ "selected_cursor_id": cursor_id}, function () {});
 
         $('body').removeClass(remove_class_str_with_spaces);
@@ -111,7 +103,6 @@ var Popup = {
     },
 
     allOffOn: function(){
-      console.log('allOffOn');
         document.getElementsByClassName("wrapper")[0].classList.add("alloff");
         alloff.innerHTML = "Use Custom Cursor";
         alloff.classList.add("offOn");
@@ -120,7 +111,6 @@ var Popup = {
     },
 
     allOffOff: function(){
-      console.log('allOffOff');
         // if(!randomSwitch){
             document.getElementsByClassName("wrapper")[0].classList.remove("alloff");
         // }
@@ -130,8 +120,6 @@ var Popup = {
     },
 
     cursorON : function(tab,cursor_id) {
-      console.log('cursorON');
-      console.log(tab);
         if (tab && tab.url.indexOf('http') === 0) {
             chrome.tabs.executeScript({
                 code: ' document.body.classList.remove('+remove_class_str+'); document.body.classList.add("'+cursor_array_ids[cursor_id]+'");',
@@ -141,7 +129,6 @@ var Popup = {
     },
 
     allOFF : function(tab) {
-      console.log('allOFF');
         if (tab && tab.url.indexOf('http') === 0) {
             chrome.tabs.executeScript({
                 code: ' document.body.classList.remove('+remove_class_str+')',
@@ -154,7 +141,6 @@ var Popup = {
 
 document.addEventListener('DOMContentLoaded', function () {
     body = document.getElementsByTagName("body")[0];
-
     for (var i = 0; i < cursor_array_ids.length; i++) {
         cursor_array_elements.push(document.getElementById(cursor_array_ids[i]));
     }
@@ -164,7 +150,7 @@ document.addEventListener('DOMContentLoaded', function () {
     alloff = document.getElementById("alloff");
 
 
-    for (var i = 0; i < cursor_array_elements.length; i++) {
+    for (var i = 0; i < cursor_array_elements.length-1; i++) {
         cursor_array_elements[i].addEventListener('click', Popup.cursorClick.bind(null,i));
     }
 
@@ -173,12 +159,13 @@ document.addEventListener('DOMContentLoaded', function () {
     chrome.storage.sync.get(["selected_cursor_id"], function(items) {
         current_cursor_id = items.selected_cursor_id;
         if(typeof current_cursor_id !== 'undefined' && current_cursor_id>=0){
-            Popup.updateIcon(current_cursor_id);
 
             $('body').removeClass(remove_class_str_with_spaces);
             $('body').addClass(cursor_array_ids[current_cursor_id]);
 
             cursor_array_elements[current_cursor_id].classList.add("selected");
+            Popup.updateIcon(current_cursor_id);
+
         }
     });
 
