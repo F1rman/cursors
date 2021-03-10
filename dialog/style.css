@@ -1,6 +1,7 @@
 @import url("https://fonts.googleapis.com/css2?family=Montserrat:wght@100;300;500;700;900&display=swap");
+
 body {
-  width: 480px;
+  width: 500px;
   height: 480px;
   background: #fff;
   font-family: 'Montserrat', sans-serif;
@@ -8,17 +9,21 @@ body {
   position: relative;
   transition: height 300ms cubic-bezier(0.25, 0.1, 0.25, 1);
   background: #222;
-  color: white; }
+  color: white;
+}
 
 ::selection {
-  background: #222; }
+  background: #222;
+}
 
 * {
   box-sizing: border-box;
-  outline: none; }
+  outline: none;
+}
 
 body, html {
-  margin: 0; }
+  margin: 0;
+}
 
 header {
   display: flex;
@@ -26,272 +31,384 @@ header {
   padding: 20px;
   height: 60px;
   align-items: center;
-  border-bottom: 1px solid #414141; }
+  border-bottom: 1px solid #414141;
+}
 
 h1 {
   font-size: 22px;
   font-weight: normal;
   margin-bottom: 28px;
   text-align: center;
-  margin: 0; }
+  margin: 0;
+}
 
 .wrapper #cursor0001 .cursor {
-  background: url("chrome-extension://__MSG_@@extension_id__/images/arrows/cursor_0001.png") center center/cover no-repeat; }
+  background: url("chrome-extension://__MSG_@@extension_id__/images/arrows/cursor_0001.png") center center/cover no-repeat;
+}
 
 .wrapper #cursor0001 .cursor.cursorsHover {
-  background: url("chrome-extension://__MSG_@@extension_id__/images/pointers/cursor_pointer_0001.png") center center/cover no-repeat; }
+  background: url("chrome-extension://__MSG_@@extension_id__/images/pointers/cursor_pointer_0001.png") center center/cover no-repeat;
+}
 
 .wrapper #cursor0002 .cursor {
-  background: url("chrome-extension://__MSG_@@extension_id__/images/arrows/cursor_0002.png") center center/cover no-repeat; }
+  background: url("chrome-extension://__MSG_@@extension_id__/images/arrows/cursor_0002.png") center center/cover no-repeat;
+}
 
 .wrapper #cursor0002 .cursor.cursorsHover {
-  background: url("chrome-extension://__MSG_@@extension_id__/images/pointers/cursor_pointer_0002.png") center center/cover no-repeat; }
+  background: url("chrome-extension://__MSG_@@extension_id__/images/pointers/cursor_pointer_0002.png") center center/cover no-repeat;
+}
 
 .wrapper #cursor0003 .cursor {
-  background: url("chrome-extension://__MSG_@@extension_id__/images/arrows/cursor_0003.png") center center/cover no-repeat; }
+  background: url("chrome-extension://__MSG_@@extension_id__/images/arrows/cursor_0003.png") center center/cover no-repeat;
+}
 
 .wrapper #cursor0003 .cursor.cursorsHover {
-  background: url("chrome-extension://__MSG_@@extension_id__/images/pointers/cursor_pointer_0003.png") center center/cover no-repeat; }
+  background: url("chrome-extension://__MSG_@@extension_id__/images/pointers/cursor_pointer_0003.png") center center/cover no-repeat;
+}
 
 .wrapper #cursor0004 .cursor {
-  background: url("chrome-extension://__MSG_@@extension_id__/images/arrows/cursor_0004.png") center center/cover no-repeat; }
+  background: url("chrome-extension://__MSG_@@extension_id__/images/arrows/cursor_0004.png") center center/cover no-repeat;
+}
 
 .wrapper #cursor0004 .cursor.cursorsHover {
-  background: url("chrome-extension://__MSG_@@extension_id__/images/pointers/cursor_pointer_0004.png") center center/cover no-repeat; }
+  background: url("chrome-extension://__MSG_@@extension_id__/images/pointers/cursor_pointer_0004.png") center center/cover no-repeat;
+}
 
 .wrapper #cursor0005 .cursor {
-  background: url("chrome-extension://__MSG_@@extension_id__/images/arrows/cursor_0005.png") center center/cover no-repeat; }
+  background: url("chrome-extension://__MSG_@@extension_id__/images/arrows/cursor_0005.png") center center/cover no-repeat;
+}
 
 .wrapper #cursor0005 .cursor.cursorsHover {
-  background: url("chrome-extension://__MSG_@@extension_id__/images/pointers/cursor_pointer_0005.png") center center/cover no-repeat; }
+  background: url("chrome-extension://__MSG_@@extension_id__/images/pointers/cursor_pointer_0005.png") center center/cover no-repeat;
+}
 
 .wrapper #cursor0006 .cursor {
-  background: url("chrome-extension://__MSG_@@extension_id__/images/arrows/cursor_0006.png") center center/cover no-repeat; }
+  background: url("chrome-extension://__MSG_@@extension_id__/images/arrows/cursor_0006.png") center center/cover no-repeat;
+}
 
 .wrapper #cursor0006 .cursor.cursorsHover {
-  background: url("chrome-extension://__MSG_@@extension_id__/images/pointers/cursor_pointer_0006.png") center center/cover no-repeat; }
+  background: url("chrome-extension://__MSG_@@extension_id__/images/pointers/cursor_pointer_0006.png") center center/cover no-repeat;
+}
 
 .wrapper #cursor0007 .cursor {
-  background: url("chrome-extension://__MSG_@@extension_id__/images/arrows/cursor_0007.png") center center/cover no-repeat; }
+  background: url("chrome-extension://__MSG_@@extension_id__/images/arrows/cursor_0007.png") center center/cover no-repeat;
+}
 
 .wrapper #cursor0007 .cursor.cursorsHover {
-  background: url("chrome-extension://__MSG_@@extension_id__/images/pointers/cursor_pointer_0007.png") center center/cover no-repeat; }
+  background: url("chrome-extension://__MSG_@@extension_id__/images/pointers/cursor_pointer_0007.png") center center/cover no-repeat;
+}
 
 .wrapper #cursor0008 .cursor {
-  background: url("chrome-extension://__MSG_@@extension_id__/images/arrows/cursor_0008.png") center center/cover no-repeat; }
+  background: url("chrome-extension://__MSG_@@extension_id__/images/arrows/cursor_0008.png") center center/cover no-repeat;
+}
 
 .wrapper #cursor0008 .cursor.cursorsHover {
-  background: url("chrome-extension://__MSG_@@extension_id__/images/pointers/cursor_pointer_0008.png") center center/cover no-repeat; }
+  background: url("chrome-extension://__MSG_@@extension_id__/images/pointers/cursor_pointer_0008.png") center center/cover no-repeat;
+}
 
 .wrapper #cursor0009 .cursor {
-  background: url("chrome-extension://__MSG_@@extension_id__/images/arrows/cursor_0009.png") center center/cover no-repeat; }
+  background: url("chrome-extension://__MSG_@@extension_id__/images/arrows/cursor_0009.png") center center/cover no-repeat;
+}
 
 .wrapper #cursor0009 .cursor.cursorsHover {
-  background: url("chrome-extension://__MSG_@@extension_id__/images/pointers/cursor_pointer_0009.png") center center/cover no-repeat; }
+  background: url("chrome-extension://__MSG_@@extension_id__/images/pointers/cursor_pointer_0009.png") center center/cover no-repeat;
+}
 
 .wrapper #cursor0010 .cursor {
-  background: url("chrome-extension://__MSG_@@extension_id__/images/arrows/cursor_0010.png") center center/cover no-repeat; }
+  background: url("chrome-extension://__MSG_@@extension_id__/images/arrows/cursor_0010.png") center center/cover no-repeat;
+}
 
 .wrapper #cursor0010 .cursor.cursorsHover {
-  background: url("chrome-extension://__MSG_@@extension_id__/images/pointers/cursor_pointer_0010.png") center center/cover no-repeat; }
+  background: url("chrome-extension://__MSG_@@extension_id__/images/pointers/cursor_pointer_0010.png") center center/cover no-repeat;
+}
 
 .wrapper #cursor0011 .cursor {
-  background: url("chrome-extension://__MSG_@@extension_id__/images/arrows/cursor_0011.png") center center/cover no-repeat; }
+  background: url("chrome-extension://__MSG_@@extension_id__/images/arrows/cursor_0011.png") center center/cover no-repeat;
+}
 
 .wrapper #cursor0011 .cursor.cursorsHover {
-  background: url("chrome-extension://__MSG_@@extension_id__/images/pointers/cursor_pointer_0011.png") center center/cover no-repeat; }
+  background: url("chrome-extension://__MSG_@@extension_id__/images/pointers/cursor_pointer_0011.png") center center/cover no-repeat;
+}
 
 .wrapper #cursor0012 .cursor {
-  background: url("chrome-extension://__MSG_@@extension_id__/images/arrows/cursor_0012.png") center center/cover no-repeat; }
+  background: url("chrome-extension://__MSG_@@extension_id__/images/arrows/cursor_0012.png") center center/cover no-repeat;
+}
 
 .wrapper #cursor0012 .cursor.cursorsHover {
-  background: url("chrome-extension://__MSG_@@extension_id__/images/pointers/cursor_pointer_0012.png") center center/cover no-repeat; }
+  background: url("chrome-extension://__MSG_@@extension_id__/images/pointers/cursor_pointer_0012.png") center center/cover no-repeat;
+}
 
 .wrapper #cursor0013 .cursor {
-  background: url("chrome-extension://__MSG_@@extension_id__/images/arrows/cursor_0013.png") center center/cover no-repeat; }
+  background: url("chrome-extension://__MSG_@@extension_id__/images/arrows/cursor_0013.png") center center/cover no-repeat;
+}
 
 .wrapper #cursor0013 .cursor.cursorsHover {
-  background: url("chrome-extension://__MSG_@@extension_id__/images/pointers/cursor_pointer_0013.png") center center/cover no-repeat; }
+  background: url("chrome-extension://__MSG_@@extension_id__/images/pointers/cursor_pointer_0013.png") center center/cover no-repeat;
+}
 
 .wrapper #cursor0014 .cursor {
-  background: url("chrome-extension://__MSG_@@extension_id__/images/arrows/cursor_0014.png") center center/cover no-repeat; }
+  background: url("chrome-extension://__MSG_@@extension_id__/images/arrows/cursor_0014.png") center center/cover no-repeat;
+}
 
 .wrapper #cursor0014 .cursor.cursorsHover {
-  background: url("chrome-extension://__MSG_@@extension_id__/images/pointers/cursor_pointer_0014.png") center center/cover no-repeat; }
+  background: url("chrome-extension://__MSG_@@extension_id__/images/pointers/cursor_pointer_0014.png") center center/cover no-repeat;
+}
 
 .wrapper #cursor0015 .cursor {
-  background: url("chrome-extension://__MSG_@@extension_id__/images/arrows/cursor_0015.png") center center/cover no-repeat; }
+  background: url("chrome-extension://__MSG_@@extension_id__/images/arrows/cursor_0015.png") center center/cover no-repeat;
+}
 
 .wrapper #cursor0015 .cursor.cursorsHover {
-  background: url("chrome-extension://__MSG_@@extension_id__/images/pointers/cursor_pointer_0015.png") center center/cover no-repeat; }
+  background: url("chrome-extension://__MSG_@@extension_id__/images/pointers/cursor_pointer_0015.png") center center/cover no-repeat;
+}
 
 .wrapper #cursor0016 .cursor {
-  background: url("chrome-extension://__MSG_@@extension_id__/images/arrows/cursor_0016.png") center center/cover no-repeat; }
+  background: url("chrome-extension://__MSG_@@extension_id__/images/arrows/cursor_0016.png") center center/cover no-repeat;
+}
 
 .wrapper #cursor0016 .cursor.cursorsHover {
-  background: url("chrome-extension://__MSG_@@extension_id__/images/pointers/cursor_pointer_0016.png") center center/cover no-repeat; }
+  background: url("chrome-extension://__MSG_@@extension_id__/images/pointers/cursor_pointer_0016.png") center center/cover no-repeat;
+}
 
 .wrapper #cursor0017 .cursor {
-  background: url("chrome-extension://__MSG_@@extension_id__/images/arrows/cursor_0017.png") center center/cover no-repeat; }
+  background: url("chrome-extension://__MSG_@@extension_id__/images/arrows/cursor_0017.png") center center/cover no-repeat;
+}
 
 .wrapper #cursor0017 .cursor.cursorsHover {
-  background: url("chrome-extension://__MSG_@@extension_id__/images/pointers/cursor_pointer_0017.png") center center/cover no-repeat; }
+  background: url("chrome-extension://__MSG_@@extension_id__/images/pointers/cursor_pointer_0017.png") center center/cover no-repeat;
+}
 
 .wrapper #cursor0018 .cursor {
-  background: url("chrome-extension://__MSG_@@extension_id__/images/arrows/cursor_0018.png") center center/cover no-repeat; }
+  background: url("chrome-extension://__MSG_@@extension_id__/images/arrows/cursor_0018.png") center center/cover no-repeat;
+}
 
 .wrapper #cursor0018 .cursor.cursorsHover {
-  background: url("chrome-extension://__MSG_@@extension_id__/images/pointers/cursor_pointer_0018.png") center center/cover no-repeat; }
+  background: url("chrome-extension://__MSG_@@extension_id__/images/pointers/cursor_pointer_0018.png") center center/cover no-repeat;
+}
 
 .wrapper #cursor0019 .cursor {
-  background: url("chrome-extension://__MSG_@@extension_id__/images/arrows/cursor_0019.png") center center/cover no-repeat; }
+  background: url("chrome-extension://__MSG_@@extension_id__/images/arrows/cursor_0019.png") center center/cover no-repeat;
+}
 
 .wrapper #cursor0019 .cursor.cursorsHover {
-  background: url("chrome-extension://__MSG_@@extension_id__/images/pointers/cursor_pointer_0019.png") center center/cover no-repeat; }
+  background: url("chrome-extension://__MSG_@@extension_id__/images/pointers/cursor_pointer_0019.png") center center/cover no-repeat;
+}
 
 .wrapper #cursor0020 .cursor {
-  background: url("chrome-extension://__MSG_@@extension_id__/images/arrows/cursor_0020.png") center center/cover no-repeat; }
+  background: url("chrome-extension://__MSG_@@extension_id__/images/arrows/cursor_0020.png") center center/cover no-repeat;
+}
 
 .wrapper #cursor0020 .cursor.cursorsHover {
-  background: url("chrome-extension://__MSG_@@extension_id__/images/pointers/cursor_pointer_0020.png") center center/cover no-repeat; }
+  background: url("chrome-extension://__MSG_@@extension_id__/images/pointers/cursor_pointer_0020.png") center center/cover no-repeat;
+}
 
 .wrapper #cursor0021 .cursor {
-  background: url("chrome-extension://__MSG_@@extension_id__/images/arrows/cursor_0021.png") center center/cover no-repeat; }
+  background: url("chrome-extension://__MSG_@@extension_id__/images/arrows/cursor_0021.png") center center/cover no-repeat;
+}
 
 .wrapper #cursor0021 .cursor.cursorsHover {
-  background: url("chrome-extension://__MSG_@@extension_id__/images/pointers/cursor_pointer_0021.png") center center/cover no-repeat; }
+  background: url("chrome-extension://__MSG_@@extension_id__/images/pointers/cursor_pointer_0021.png") center center/cover no-repeat;
+}
 
 .wrapper #cursorthings_0001 .cursor {
-  background: url("chrome-extension://__MSG_@@extension_id__/images/arrows/cursor_things_0001.png") center center/cover no-repeat; }
+  background: url("chrome-extension://__MSG_@@extension_id__/images/arrows/cursor_things_0001.png") center center/cover no-repeat;
+}
 
 .wrapper #cursorthings_0001 .cursor.cursorsHover {
-  background: url("chrome-extension://__MSG_@@extension_id__/images/pointers/cursor_pointer_things_0001.png") center center/cover no-repeat; }
+  background: url("chrome-extension://__MSG_@@extension_id__/images/pointers/cursor_pointer_things_0001.png") center center/cover no-repeat;
+}
 
 .wrapper #cursorthings_0002 .cursor {
-  background: url("chrome-extension://__MSG_@@extension_id__/images/arrows/cursor_things_0002.png") center center/cover no-repeat; }
+  background: url("chrome-extension://__MSG_@@extension_id__/images/arrows/cursor_things_0002.png") center center/cover no-repeat;
+}
 
 .wrapper #cursorthings_0002 .cursor.cursorsHover {
-  background: url("chrome-extension://__MSG_@@extension_id__/images/pointers/cursor_pointer_things_0002.png") center center/cover no-repeat; }
+  background: url("chrome-extension://__MSG_@@extension_id__/images/pointers/cursor_pointer_things_0002.png") center center/cover no-repeat;
+}
 
 .wrapper #cursorthings_0003 .cursor {
-  background: url("chrome-extension://__MSG_@@extension_id__/images/arrows/cursor_things_0003.png") center center/cover no-repeat; }
+  background: url("chrome-extension://__MSG_@@extension_id__/images/arrows/cursor_things_0003.png") center center/cover no-repeat;
+}
 
 .wrapper #cursorthings_0003 .cursor.cursorsHover {
-  background: url("chrome-extension://__MSG_@@extension_id__/images/pointers/cursor_pointer_things_0003.png") center center/cover no-repeat; }
+  background: url("chrome-extension://__MSG_@@extension_id__/images/pointers/cursor_pointer_things_0003.png") center center/cover no-repeat;
+}
 
 .wrapper #cursorthings_0004 .cursor {
-  background: url("chrome-extension://__MSG_@@extension_id__/images/arrows/cursor_things_0004.png") center center/cover no-repeat; }
+  background: url("chrome-extension://__MSG_@@extension_id__/images/arrows/cursor_things_0004.png") center center/cover no-repeat;
+}
 
 .wrapper #cursorthings_0004 .cursor.cursorsHover {
-  background: url("chrome-extension://__MSG_@@extension_id__/images/pointers/cursor_pointer_things_0004.png") center center/cover no-repeat; }
+  background: url("chrome-extension://__MSG_@@extension_id__/images/pointers/cursor_pointer_things_0004.png") center center/cover no-repeat;
+}
 
 .wrapper #cursorthings_0005 .cursor {
-  background: url("chrome-extension://__MSG_@@extension_id__/images/arrows/cursor_things_0005.png") center center/cover no-repeat; }
+  background: url("chrome-extension://__MSG_@@extension_id__/images/arrows/cursor_things_0005.png") center center/cover no-repeat;
+}
 
 .wrapper #cursorthings_0005 .cursor.cursorsHover {
-  background: url("chrome-extension://__MSG_@@extension_id__/images/pointers/cursor_pointer_things_0005.png") center center/cover no-repeat; }
+  background: url("chrome-extension://__MSG_@@extension_id__/images/pointers/cursor_pointer_things_0005.png") center center/cover no-repeat;
+}
 
 .wrapper #cursorthings_0006 .cursor {
-  background: url("chrome-extension://__MSG_@@extension_id__/images/arrows/cursor_things_0006.png") center center/cover no-repeat; }
+  background: url("chrome-extension://__MSG_@@extension_id__/images/arrows/cursor_things_0006.png") center center/cover no-repeat;
+}
 
 .wrapper #cursorthings_0006 .cursor.cursorsHover {
-  background: url("chrome-extension://__MSG_@@extension_id__/images/pointers/cursor_pointer_things_0006.png") center center/cover no-repeat; }
+  background: url("chrome-extension://__MSG_@@extension_id__/images/pointers/cursor_pointer_things_0006.png") center center/cover no-repeat;
+}
 
 .wrapper #cursorthings_0007 .cursor {
-  background: url("chrome-extension://__MSG_@@extension_id__/images/arrows/cursor_things_0007.png") center center/cover no-repeat; }
+  background: url("chrome-extension://__MSG_@@extension_id__/images/arrows/cursor_things_0007.png") center center/cover no-repeat;
+}
 
 .wrapper #cursorthings_0007 .cursor.cursorsHover {
-  background: url("chrome-extension://__MSG_@@extension_id__/images/pointers/cursor_pointer_things_0007.png") center center/cover no-repeat; }
+  background: url("chrome-extension://__MSG_@@extension_id__/images/pointers/cursor_pointer_things_0007.png") center center/cover no-repeat;
+}
 
 .wrapper #cursorthings_0008 .cursor {
-  background: url("chrome-extension://__MSG_@@extension_id__/images/arrows/cursor_things_0008.png") center center/cover no-repeat; }
+  background: url("chrome-extension://__MSG_@@extension_id__/images/arrows/cursor_things_0008.png") center center/cover no-repeat;
+}
 
 .wrapper #cursorthings_0008 .cursor.cursorsHover {
-  background: url("chrome-extension://__MSG_@@extension_id__/images/pointers/cursor_pointer_things_0008.png") center center/cover no-repeat; }
+  background: url("chrome-extension://__MSG_@@extension_id__/images/pointers/cursor_pointer_things_0008.png") center center/cover no-repeat;
+}
 
 .wrapper #cursorthings_0009 .cursor {
-  background: url("chrome-extension://__MSG_@@extension_id__/images/arrows/cursor_things_0009.png") center center/cover no-repeat; }
+  background: url("chrome-extension://__MSG_@@extension_id__/images/arrows/cursor_things_0009.png") center center/cover no-repeat;
+}
 
 .wrapper #cursorthings_0009 .cursor.cursorsHover {
-  background: url("chrome-extension://__MSG_@@extension_id__/images/pointers/cursor_pointer_things_0009.png") center center/cover no-repeat; }
+  background: url("chrome-extension://__MSG_@@extension_id__/images/pointers/cursor_pointer_things_0009.png") center center/cover no-repeat;
+}
 
 .wrapper #cursorthings_0010 .cursor {
-  background: url("chrome-extension://__MSG_@@extension_id__/images/arrows/cursor_things_0010.png") center center/cover no-repeat; }
+  background: url("chrome-extension://__MSG_@@extension_id__/images/arrows/cursor_things_0010.png") center center/cover no-repeat;
+}
 
 .wrapper #cursorthings_0010 .cursor.cursorsHover {
-  background: url("chrome-extension://__MSG_@@extension_id__/images/pointers/cursor_pointer_things_0010.png") center center/cover no-repeat; }
+  background: url("chrome-extension://__MSG_@@extension_id__/images/pointers/cursor_pointer_things_0010.png") center center/cover no-repeat;
+}
 
 .wrapper #cursorthings_0011 .cursor {
-  background: url("chrome-extension://__MSG_@@extension_id__/images/arrows/cursor_things_0011.png") center center/cover no-repeat; }
+  background: url("chrome-extension://__MSG_@@extension_id__/images/arrows/cursor_things_0011.png") center center/cover no-repeat;
+}
 
 .wrapper #cursorthings_0011 .cursor.cursorsHover {
-  background: url("chrome-extension://__MSG_@@extension_id__/images/pointers/cursor_pointer_things_0011.png") center center/cover no-repeat; }
+  background: url("chrome-extension://__MSG_@@extension_id__/images/pointers/cursor_pointer_things_0011.png") center center/cover no-repeat;
+}
 
 .wrapper #cursorthings_0012 .cursor {
-  background: url("chrome-extension://__MSG_@@extension_id__/images/arrows/cursor_things_0012.png") center center/cover no-repeat; }
+  background: url("chrome-extension://__MSG_@@extension_id__/images/arrows/cursor_things_0012.png") center center/cover no-repeat;
+}
 
 .wrapper #cursorthings_0012 .cursor.cursorsHover {
-  background: url("chrome-extension://__MSG_@@extension_id__/images/pointers/cursor_pointer_things_0012.png") center center/cover no-repeat; }
+  background: url("chrome-extension://__MSG_@@extension_id__/images/pointers/cursor_pointer_things_0012.png") center center/cover no-repeat;
+}
 
 .wrapper #cursorthings_0013 .cursor {
-  background: url("chrome-extension://__MSG_@@extension_id__/images/arrows/cursor_things_0013.png") center center/cover no-repeat; }
+  background: url("chrome-extension://__MSG_@@extension_id__/images/arrows/cursor_things_0013.png") center center/cover no-repeat;
+}
 
 .wrapper #cursorthings_0013 .cursor.cursorsHover {
-  background: url("chrome-extension://__MSG_@@extension_id__/images/pointers/cursor_pointer_things_0013.png") center center/cover no-repeat; }
+  background: url("chrome-extension://__MSG_@@extension_id__/images/pointers/cursor_pointer_things_0013.png") center center/cover no-repeat;
+}
 
 .wrapper #cursorthings_0014 .cursor {
-  background: url("chrome-extension://__MSG_@@extension_id__/images/arrows/cursor_things_0014.png") center center/cover no-repeat; }
+  background: url("chrome-extension://__MSG_@@extension_id__/images/arrows/cursor_things_0014.png") center center/cover no-repeat;
+}
 
 .wrapper #cursorthings_0014 .cursor.cursorsHover {
-  background: url("chrome-extension://__MSG_@@extension_id__/images/pointers/cursor_pointer_things_0014.png") center center/cover no-repeat; }
+  background: url("chrome-extension://__MSG_@@extension_id__/images/pointers/cursor_pointer_things_0014.png") center center/cover no-repeat;
+}
 
 .wrapper #cursorthings_0015 .cursor {
-  background: url("chrome-extension://__MSG_@@extension_id__/images/arrows/cursor_things_0015.png") center center/cover no-repeat; }
+  background: url("chrome-extension://__MSG_@@extension_id__/images/arrows/cursor_things_0015.png") center center/cover no-repeat;
+}
 
 .wrapper #cursorthings_0015 .cursor.cursorsHover {
-  background: url("chrome-extension://__MSG_@@extension_id__/images/pointers/cursor_pointer_things_0015.png") center center/cover no-repeat; }
+  background: url("chrome-extension://__MSG_@@extension_id__/images/pointers/cursor_pointer_things_0015.png") center center/cover no-repeat;
+}
 
 .wrapper #cursorthings_0016 .cursor {
-  background: url("chrome-extension://__MSG_@@extension_id__/images/arrows/cursor_things_0016.png") center center/cover no-repeat; }
+  background: url("chrome-extension://__MSG_@@extension_id__/images/arrows/cursor_things_0016.png") center center/cover no-repeat;
+}
 
 .wrapper #cursorthings_0016 .cursor.cursorsHover {
-  background: url("chrome-extension://__MSG_@@extension_id__/images/pointers/cursor_pointer_things_0016.png") center center/cover no-repeat; }
+  background: url("chrome-extension://__MSG_@@extension_id__/images/pointers/cursor_pointer_things_0016.png") center center/cover no-repeat;
+}
 
 .wrapper #cursorthings_0017 .cursor {
-  background: url("chrome-extension://__MSG_@@extension_id__/images/arrows/cursor_things_0017.png") center center/cover no-repeat; }
+  background: url("chrome-extension://__MSG_@@extension_id__/images/arrows/cursor_things_0017.png") center center/cover no-repeat;
+}
 
 .wrapper #cursorthings_0017 .cursor.cursorsHover {
-  background: url("chrome-extension://__MSG_@@extension_id__/images/pointers/cursor_pointer_things_0017.png") center center/cover no-repeat; }
+  background: url("chrome-extension://__MSG_@@extension_id__/images/pointers/cursor_pointer_things_0017.png") center center/cover no-repeat;
+}
 
 .wrapper #cursorthings_0018 .cursor {
-  background: url("chrome-extension://__MSG_@@extension_id__/images/arrows/cursor_things_0018.png") center center/cover no-repeat; }
+  background: url("chrome-extension://__MSG_@@extension_id__/images/arrows/cursor_things_0018.png") center center/cover no-repeat;
+}
 
 .wrapper #cursorthings_0018 .cursor.cursorsHover {
-  background: url("chrome-extension://__MSG_@@extension_id__/images/pointers/cursor_pointer_things_0018.png") center center/cover no-repeat; }
+  background: url("chrome-extension://__MSG_@@extension_id__/images/pointers/cursor_pointer_things_0018.png") center center/cover no-repeat;
+}
 
 .wrapper #cursorthings_0019 .cursor {
-  background: url("chrome-extension://__MSG_@@extension_id__/images/arrows/cursor_things_0019.png") center center/cover no-repeat; }
+  background: url("chrome-extension://__MSG_@@extension_id__/images/arrows/cursor_things_0019.png") center center/cover no-repeat;
+}
 
 .wrapper #cursorthings_0019 .cursor.cursorsHover {
-  background: url("chrome-extension://__MSG_@@extension_id__/images/pointers/cursor_pointer_things_0019.png") center center/cover no-repeat; }
+  background: url("chrome-extension://__MSG_@@extension_id__/images/pointers/cursor_pointer_things_0019.png") center center/cover no-repeat;
+}
 
 .wrapper #cursorthings_0020 .cursor {
-  background: url("chrome-extension://__MSG_@@extension_id__/images/arrows/cursor_things_0020.png") center center/cover no-repeat; }
+  background: url("chrome-extension://__MSG_@@extension_id__/images/arrows/cursor_things_0020.png") center center/cover no-repeat;
+}
 
 .wrapper #cursorthings_0020 .cursor.cursorsHover {
-  background: url("chrome-extension://__MSG_@@extension_id__/images/pointers/cursor_pointer_things_0020.png") center center/cover no-repeat; }
+  background: url("chrome-extension://__MSG_@@extension_id__/images/pointers/cursor_pointer_things_0020.png") center center/cover no-repeat;
+}
 
 .wrapper #cursorthings_0021 .cursor {
-  background: url("chrome-extension://__MSG_@@extension_id__/images/arrows/cursor_things_0021.png") center center/cover no-repeat; }
-
+  background: url("chrome-extension://__MSG_@@extension_id__/images/arrows/cursor_things_0021.png") center center/cover no-repeat;
+}
 .wrapper #cursorthings_0021 .cursor.cursorsHover {
-  background: url("chrome-extension://__MSG_@@extension_id__/images/pointers/cursor_pointer_things_0021.png") center center/cover no-repeat; }
+  background: url("chrome-extension://__MSG_@@extension_id__/images/pointers/cursor_pointer_things_0021.png") center center/cover no-repeat;
+}
 
-.wrapper #cursorthings_0020::after
-, .wrapper #cursorthings_0019::after
-, .wrapper #cursorthings_0018::after
-, .wrapper #cursorthings_0017::after
-, .wrapper #cursorthings_0016::after {
+.wrapper #cursorthings_0022 .cursor {
+  background: url("chrome-extension://__MSG_@@extension_id__/images/arrows/cursor_things_0022.png") center center/cover no-repeat;
+}
+.wrapper #cursorthings_0022 .cursor.cursorsHover {
+  background: url("chrome-extension://__MSG_@@extension_id__/images/pointers/cursor_pointer_things_0022.png") center center/cover no-repeat;
+}
+.wrapper #cursorthings_0023 .cursor {
+  background: url("chrome-extension://__MSG_@@extension_id__/images/arrows/cursor_things_0023.png") center center/cover no-repeat;
+}
+.wrapper #cursorthings_0023 .cursor.cursorsHover {
+  background: url("chrome-extension://__MSG_@@extension_id__/images/pointers/cursor_pointer_things_0023.png") center center/cover no-repeat;
+}
+.wrapper #cursorthings_0024 .cursor {
+  background: url("chrome-extension://__MSG_@@extension_id__/images/arrows/cursor_things_0024.png") center center/cover no-repeat;
+}
+.wrapper #cursorthings_0024 .cursor.cursorsHover {
+  background: url("chrome-extension://__MSG_@@extension_id__/images/pointers/cursor_pointer_things_0024.png") center center/cover no-repeat;
+}
+.wrapper #cursorthings_0025 .cursor {
+  background: url("chrome-extension://__MSG_@@extension_id__/images/arrows/cursor_things_0025.png") center center/cover no-repeat;
+}
+.wrapper #cursorthings_0025 .cursor.cursorsHover {
+  background: url("chrome-extension://__MSG_@@extension_id__/images/pointers/cursor_pointer_things_0025.png") center center/cover no-repeat;
+}
+.wrapper #cursorthings_0026 .cursor {
+  background: url("chrome-extension://__MSG_@@extension_id__/images/arrows/cursor_things_0026.png") center center/cover no-repeat;
+}
+.wrapper #cursorthings_0026 .cursor.cursorsHover {
+  background: url("chrome-extension://__MSG_@@extension_id__/images/pointers/cursor_pointer_things_0026.png") center center/cover no-repeat;
+}
+
+.wrapper #cursorthings_0025::after, .wrapper #cursorthings_0024::after, .wrapper #cursorthings_0023::after, .wrapper #cursorthings_0022::after, .wrapper #cursorthings_0021::after, .wrapper #cursorthings_0020::after, .wrapper #cursorthings_0019::after, .wrapper #cursorthings_0018::after, .wrapper #cursorthings_0017::after, .wrapper #cursorthings_0016::after {
   content: 'NEW';
   background: orange;
   padding: 2px 6px;
@@ -300,37 +417,45 @@ h1 {
   position: absolute;
   top: 0px;
   left: 20px;
-  font-size: 10px; }
+  font-size: 10px;
+}
 
 .wrapper .options {
-  position: relative; }
+  position: relative;
+}
 
 .wrapper .cursor {
   width: 30px;
   height: 30px;
   transition: all .2s ease;
-  cursor: pointer; }
+  cursor: pointer;
+}
 
 #options_wrapper {
   width: 100%;
-  height: 100%; }
+  height: 100%;
+}
 
 #options_wrapper .options {
   padding: 10px;
   display: flex;
   justify-content: center;
   align-items: center;
-  height: 50px; }
+  height: 50px;
+}
 
 #options_wrapper .options.selected {
-  border-bottom: 1px solid white; }
+  border-bottom: 1px solid white;
+}
 
 .wrapper .selected p {
   color: #269e82;
-  transition: color 0.25s ease-in-out; }
+  transition: color 0.25s ease-in-out;
+}
 
 #command_container {
-  width: 100%; }
+  width: 100%;
+}
 
 #alloff {
   display: block;
@@ -347,38 +472,47 @@ h1 {
   font-weight: 700;
   transition: all .2s ease;
   width: 200px;
-  cursor: pointer; }
+  cursor: pointer;
+}
 
 #alloff:hover {
   background: white;
-  color: #222; }
+  color: #222;
+}
 
 #txtH1 {
   display: block;
   float: left;
   font-weight: bold;
-  font-size: 24px; }
+  font-size: 24px;
+}
 
 #options_wrapper {
   padding: 15px;
   display: flex;
-  flex-flow: row wrap; }
+  flex-flow: row wrap;
+}
 
 p#alloff:hover {
-  text-decoration: underline; }
+  text-decoration: underline;
+}
 
 .alloff {
-  opacity: 0.2; }
+  opacity: 0.2;
+}
 
 .inactive {
-  opacity: .5; }
+  opacity: .5;
+}
 
 /* Not Allowed */
 .notAllowed .wrapper, .notAllowed h1, .notAllowed .footer, .notAllowedWrapper {
-  display: none; }
+  display: none;
+}
 
 .notAllowed .wrapper {
-  display: none !important; }
+  display: none !important;
+}
 
 .notAllowed .notAllowedWrapper {
   display: flex;
@@ -386,17 +520,20 @@ p#alloff:hover {
   justify-content: center;
   align-items: center;
   width: 100%;
-  height: 100%; }
+  height: 100%;
+}
 
 .notAllowed .notAllowedWrapper h2 {
   font-family: 'Montserrat', sans-serif;
   text-align: center;
   font-size: 24px;
   margin-bottom: 0;
-  font-weight: 500; }
+  font-weight: 500;
+}
 
 .notAllowed .notAllowedWrapper p {
-  font-size: 14px; }
+  font-size: 14px;
+}
 
 .notAllowed .notAllowedWrapper a, .notAllowed .notAllowedWrapper a:visited {
   color: #269e82;
@@ -410,10 +547,12 @@ p#alloff:hover {
   box-shadow: none;
   text-align: center;
   text-decoration: none;
-  transition: color .25s ease; }
+  transition: color .25s ease;
+}
 
 .notAllowed .notAllowedWrapper a:hover {
-  color: #269e82; }
+  color: #269e82;
+}
 
 .rete {
   color: #269e82;
@@ -426,6 +565,7 @@ p#alloff:hover {
   position: absolute;
   bottom: -50px;
   left: 0;
-  width: 100%; }
+  width: 100%;
+}
 
 /*# sourceMappingURL=style.css.map */

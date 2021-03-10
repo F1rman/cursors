@@ -277,6 +277,37 @@
 .cursorthings_0020 {
     cursor: url('chrome-extension://__MSG_@@extension_id__/images/arrows/cursor_things_0020.png'), auto !important;
 }
-.cursorthings_0020 a, .cursorthings_0020 button,.cursorthings_0020 .cursorsHover{
+.cursorthings_0020 a, .cursorthings_0021 button,.cursorthings_0021 .cursorsHover{
     cursor: url('chrome-extension://__MSG_@@extension_id__/images/pointers/cursor_pointer_things_0020.png'), pointer !important;;
+}
+.cursorthings_0021 {
+    cursor: url('chrome-extension://__MSG_@@extension_id__/images/arrows/cursor_things_0021.png'), auto !important;
+}
+.cursorthings_0021 a, .cursorthings_0021 button,.cursorthings_0021 .cursorsHover{
+    cursor: url('chrome-extension://__MSG_@@extension_id__/images/pointers/cursor_pointer_things_0021.png'), pointer !important;;
+}
+
+.cursorthings_0022 {
+    cursor: url('chrome-extension://__MSG_@@extension_id__/images/arrows/cursor_things_0022.png'), auto !important;
+}
+.cursorthings_0022 a, .cursorthings_0022 button,.cursorthings_0022 .cursorsHover{
+    cursor: url('chrome-extension://__MSG_@@extension_id__/images/pointers/cursor_pointer_things_0022.png'), pointer !important;;
+}
+.cursorthings_0023 {
+    cursor: url('chrome-extension://__MSG_@@extension_id__/images/arrows/cursor_things_0023.png'), auto !important;
+}
+.cursorthings_0023 a, .cursorthings_0023 button,.cursorthings_0023 .cursorsHover{
+    cursor: url('chrome-extension://__MSG_@@extension_id__/images/pointers/cursor_pointer_things_0023.png'), pointer !important;;
+}
+.cursorthings_0024 {
+    cursor: url('chrome-extension://__MSG_@@extension_id__/images/arrows/cursor_things_0024.png'), auto !important;
+}
+.cursorthings_0024 a, .cursorthings_0024 button,.cursorthings_0024 .cursorsHover{
+    cursor: url('chrome-extension://__MSG_@@extension_id__/images/pointers/cursor_pointer_things_0024.png'), pointer !important;;
+}
+.cursorthings_0025 {
+    cursor: url('chrome-extension://__MSG_@@extension_id__/images/arrows/cursor_things_0025.png'), auto !important;
+}
+.cursorthings_0025 a, .cursorthings_0025 button,.cursorthings_0021 .cursorsHover{
+    cursor: url('chrome-extension://__MSG_@@extension_id__/images/pointers/cursor_pointer_things_0025.png'), pointer !important;;
 }
