@@ -1,7 +1,7 @@
 @import url("https://fonts.googleapis.com/css2?family=Montserrat:wght@100;300;500;700;900&display=swap");
 
 body {
-  width: 500px;
+  width: 535px;
   height: 480px;
   background: #fff;
   font-family: 'Montserrat', sans-serif;
@@ -563,7 +563,7 @@ p#alloff:hover {
   font-weight: 700;
   border-top: 1px solid;
   position: absolute;
-  bottom: -50px;
+  bottom: -75px;
   left: 0;
   width: 100%;
 }
