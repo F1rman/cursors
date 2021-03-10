@@ -23,6 +23,6 @@
    "name": "Style Cursor",
    "offline_enabled": true,
    "permissions": [ "storage", "*://*/*", "tabs"],
-   "version": "3",
+   "version": "4",
    "web_accessible_resources": [ "images/*", "content/*.*" ]
 }
