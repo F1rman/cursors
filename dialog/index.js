@@ -1,4 +1,3 @@
-
 var alloff;
 var alloptions;
 var isSwitchedOff = false;
@@ -110,20 +109,19 @@ var Popup = {
     );
   },
   showError: async function (tab) {
-   
-      var tablink = await getTab();
+    var tablink = await getTab();
     if (
-        tablink.startsWith("chrome") ||
-        tablink.startsWith("https://chrome.google.com/webstore/")
-      ) {
-        if (document.body){
-          document.body.classList.add("notAllowed");
-        }
+      tablink.startsWith("chrome") ||
+      tablink.startsWith("https://chrome.google.com/webstore/")
+    ) {
+      if (document.body) {
+        document.body.classList.add("notAllowed");
       }
+    }
   },
 
   cursorClick: function (cursor_id) {
-    chrome.storage.sync.set({ selected_cursor_id: cursor_id }, function () {});
+    chrome.storage.sync.set({ selected_cursor_id: cursor_id });
 
     $("body").removeClass(remove_class_str_with_spaces);
     $("body").addClass(cursor_array_ids[cursor_id]);
@@ -137,7 +135,6 @@ var Popup = {
       current_cursor_id = -1;
       chrome.storage.sync.set(
         { selected_cursor_id: current_cursor_id },
-        function () {}
       );
       document.getElementsByClassName("wrapper")[0].classList.add("alloff");
 
@@ -180,24 +177,25 @@ var Popup = {
 
   cursorON: function (tab, cursor_id) {
     if (tab && tab.url.indexOf("http") === 0) {
-      console.log(chrome.tabs)
-      chrome.tabs.executeScript({
-        code:
-          " document.body.classList.remove(" +
-          remove_class_str +
-          '); document.body.classList.add("' +
-          cursor_array_ids[cursor_id] +
-          '");',
-        allFrames: true,
+      chrome.scripting.executeScript({
+        target: {tabId: tab.id},
+        args: [cursor_array_ids,cursor_id],
+        func: (cursor_array_remove,cursor_id) => {
+          document.body.classList.remove(...cursor_array_remove);
+          document.body.classList.add(cursor_array_remove[cursor_id]);
+        },
       });
     }
   },
 
   allOFF: function (tab) {
     if (tab && tab.url.indexOf("http") === 0) {
-      chrome.tabs.executeScript({
-        code: " document.body.classList.remove(" + remove_class_str + ")",
-        allFrames: true,
+      chrome.scripting.executeScript({
+        target: {tabId: tab.id},
+        args: [cursor_array_ids],
+        func: (remove_class_str) => {
+          document.body.classList.remove(...remove_class_str);
+        },
       });
     }
   },
@@ -212,18 +210,16 @@ document.addEventListener("DOMContentLoaded", function () {
   alloptions = document.getElementsByClassName("options");
   alloff = document.getElementById("alloff");
 
-  console.log(cursor_array_elements.length);
+  console.log(cursor_array_elements[0]);
   for (var i = 0; i < cursor_array_elements.length; i++) {
-    cursor_array_elements[i].addEventListener(
-      "click",
-      Popup.cursorClick.bind(null, i)
-    );
+    $(cursor_array_elements[i]).on("click", Popup.cursorClick.bind(null, i));
   }
 
   alloff.addEventListener("click", Popup.alloffClick);
 
   chrome.storage.sync.get(["selected_cursor_id"], function (items) {
     current_cursor_id = items.selected_cursor_id;
+    console.log(current_cursor_id)
     if (typeof current_cursor_id !== "undefined" && current_cursor_id >= 0) {
       $("body").removeClass(remove_class_str_with_spaces);
       $("body").addClass(cursor_array_ids[current_cursor_id]);

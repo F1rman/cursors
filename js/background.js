@@ -1,4 +1,3 @@
-
 chrome.tabs.onUpdated.addListener(callback);
 chrome.tabs.onActivated.addListener(callback);
 chrome.tabs.onCreated.addListener(callback);
@@ -68,39 +67,45 @@ for (i = 0; i < cursor_array_ids.length; i++) {
 
 class Cursor {
   cursorON(tab, cursor_id) {
+    console.log(cursor_id, tab)
     if (tab && tab.url.indexOf("http") === 0) {
-      chrome.tabs.executeScript(tab.id, {
-        code:
-          "document.body.classList.remove(" +
-          remove_class_str +
-          '); document.body.classList.add("' +
-          cursor_array_ids[cursor_id] +
-          '");',
-        allFrames: true,
+    console.log(cursor_id, tab)
+
+      chrome.scripting.executeScript({
+        target: {tabId: tab.id},
+        args: [cursor_array_ids,cursor_id],
+        func: (cursor_array_remove,cursor_id) => {
+          document.body.classList.remove(...cursor_array_remove);
+          document.body.classList.add(cursor_array_remove[cursor_id]);
+        },
       });
     }
   }
 
   allOFF(tab) {
     if (tab && tab.url.indexOf("http") === 0) {
-      chrome.tabs.executeScript(tab.id, {
-        code: "document.body.classList.remove(" + remove_class_str + ");",
-        allFrames: true,
+      chrome.scripting.executeScript({
+       target: {tabId: tab.id},
+       args: [cursor_array_ids],
+       func: (remove_class_str) => {
+         document.body.classList.remove(...remove_class_str);
+       },
       });
     }
   }
 }
 
 function callback() {
+  
   chrome.tabs.query(
     { active: true, currentWindow: true },
     function (arrayOfTabs) {
       var tab = arrayOfTabs[0];
       chrome.storage.sync.get(["selected_cursor_id"], function (items) {
         var current_cursor_id = items.selected_cursor_id;
-
-        if (typeof current_cursor_id !== "undefined")
-          new Cursor().cursorON(tab, current_cursor_id);
+        console.log(current_cursor_id)
+        if (typeof current_cursor_id !== "undefined"){
+          new Cursor().cursorON(tab, current_cursor_id);}
         else {
           new Cursor().allOFF(tab);
         }

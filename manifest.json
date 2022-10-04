@@ -25,11 +25,11 @@
    "manifest_version": 3,
    "name": "Style Cursor",
    "offline_enabled": true,
-   "permissions": [ "storage", "tabs"],
+   "permissions": [ "storage", "tabs","scripting","activeTab"],
    "version": "4",
    "web_accessible_resources": [{
       "resources": ["images/*","content/*","js/*"],
-      "matches": [],
+      "matches": ["*://*/*"],
       "extension_ids": []
      }
    ]}
