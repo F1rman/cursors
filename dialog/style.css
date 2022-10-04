@@ -407,8 +407,23 @@ h1 {
 .wrapper #cursorthings_0026 .cursor.cursorsHover {
   background: url("chrome-extension://__MSG_@@extension_id__/images/pointers/cursor_pointer_things_0026.png") center center/cover no-repeat;
 }
+.wrapper #cursorthings_0027 .cursor {
+  background: url("chrome-extension://__MSG_@@extension_id__/images/arrows/cursor_things_0027.png") center center/cover no-repeat;
+}
+.wrapper #cursorthings_0027 .cursor.cursorsHover {
+  background: url("chrome-extension://__MSG_@@extension_id__/images/pointers/cursor_pointer_things_0027.png") center center/cover no-repeat;
+}
 
-.wrapper #cursorthings_0025::after, .wrapper #cursorthings_0024::after, .wrapper #cursorthings_0023::after, .wrapper #cursorthings_0022::after, .wrapper #cursorthings_0021::after, .wrapper #cursorthings_0020::after, .wrapper #cursorthings_0019::after, .wrapper #cursorthings_0018::after, .wrapper #cursorthings_0017::after, .wrapper #cursorthings_0016::after {
+.wrapper #cursor0001::after,
+.wrapper #cursor0002::after,
+.wrapper #cursor0003::after,
+.wrapper #cursor0004::after,
+.wrapper #cursor0005::after,
+.wrapper #cursor0006::after,
+.wrapper #cursor0007::after,
+.wrapper #cursor0008::after,
+.wrapper #cursor0009::after
+ {
   content: 'NEW';
   background: orange;
   padding: 2px 6px;

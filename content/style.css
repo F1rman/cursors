@@ -1,5 +1,6 @@
-.cursor0001 {
+.cursor0001{
     cursor: url('chrome-extension://__MSG_@@extension_id__/images/arrows/cursor_0001.png'), auto !important;
+   
 }
 .cursor0001 a, .cursor0001 button,.cursor0001 .cursorsHover{
     cursor: url('chrome-extension://__MSG_@@extension_id__/images/pointers/cursor_pointer_0001.png'), pointer !important;;
@@ -310,4 +311,10 @@
 }
 .cursorthings_0025 a, .cursorthings_0025 button,.cursorthings_0021 .cursorsHover{
     cursor: url('chrome-extension://__MSG_@@extension_id__/images/pointers/cursor_pointer_things_0025.png'), pointer !important;;
+}
+.cursorthings_0026 {
+    cursor: url('chrome-extension://__MSG_@@extension_id__/images/arrows/cursor_things_0026.png'), auto !important;
+}
+.cursorthings_0026 a, .cursorthings_0026 button,.cursorthings_0026 .cursorsHover{
+    cursor: url('chrome-extension://__MSG_@@extension_id__/images/pointers/cursor_things_0026.png'), pointer !important;;
 }
