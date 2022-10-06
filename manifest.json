@@ -26,7 +26,7 @@
    "name": "Style Cursor",
    "offline_enabled": true,
    "permissions": [ "storage", "tabs","scripting","activeTab"],
-   "version": "4",
+   "version": "7",
    "web_accessible_resources": [{
       "resources": ["images/*","content/*","js/*"],
       "matches": ["*://*/*"],
